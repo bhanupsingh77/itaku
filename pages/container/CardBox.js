@@ -1,9 +1,14 @@
 import Card from './Card.js';
 
 export default function CardBox({filteredCardsData}) {
-    const infoFilledCards = filteredCardsData.map((elem,i)=>{
-        return <Card key={i} name={elem.name} img={elem.img} review={elem.review} rating={elem.rating} episodes={elem.episodes} genre={elem.genre}/>    
-       });
+    if(filteredCardsData){
+        const infoFilledCards = filteredCardsData.map((elem,i)=>{
+            return <Card key={i} name={elem.name} img={elem.img} review={elem.review} rating={elem.rating} episodes={elem.episodes} genre={elem.genre}/>    
+        });
+    }else{
+        <h1>Loading...</h1>
+    }
+
     return (
         <div className="container">
             {infoFilledCards}
