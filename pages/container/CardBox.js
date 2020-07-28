@@ -6,7 +6,7 @@ export default function CardBox({filteredCardsData}) {
             return <Card key={i} name={elem.name} img={elem.img} review={elem.review} rating={elem.rating} episodes={elem.episodes} genre={elem.genre}/>    
         });
     }else{
-        <h1>Loading...</h1>
+        const infoFilledCards = <h1>Loading...</h1>;
     }
 
     return (
