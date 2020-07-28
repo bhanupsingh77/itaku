@@ -21,7 +21,6 @@ export default function CardBox({filteredCardsData}) {
                     padding: 2rem;
                    
                 }
-
             `}</style>
         </div>
     )
