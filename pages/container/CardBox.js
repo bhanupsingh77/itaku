@@ -1,12 +1,13 @@
 import Card from './Card.js';
 
 export default function CardBox({filteredCardsData}) {
+    let infoFilledCards;
     if(filteredCardsData){
-        const infoFilledCards = filteredCardsData.map((elem,i)=>{
+        infoFilledCards = filteredCardsData.map((elem,i)=>{
             return <Card key={i} name={elem.name} img={elem.img} review={elem.review} rating={elem.rating} episodes={elem.episodes} genre={elem.genre}/>    
         });
     }else{
-        const infoFilledCards = <h1>Loading...</h1>;
+        infoFilledCards = "loading..."
     }
 
     return (
