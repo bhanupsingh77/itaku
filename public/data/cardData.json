@@ -1,18 +1,16 @@
-
 [
-    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
-    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
-    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
-    {"name": "gurrenLagann", "img": "img/gurrenLagann.jpg", "rating": "8", "genre": "adventure", "review": "pqz", "episodes": "25","status": "ongoing"},
-    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
-    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
-    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
-    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
-    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
-    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
-    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
-    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
-    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
-    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
-    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"}
+    {"name": "haikyuu!!", "img": "img/haikyuu.jpg", "rating": "8.7", "genre": "Comedy, Drama, Sports", "releaseDate": "2014", "episodes": "75","seasons": "4", "status": "ongoing"},
+    {"name": "deathNote", "img": "img/deathNote.jpg", "rating": "9.0", "genre": "Thriller, Crime, Drama", "releaseDate": "2006", "episodes": "37","seasons": "1", "status": "finished"},
+    {"name": "demonSlayer", "img": "img/demonSlayer.jpg", "rating": "8.8", "genre":"Action, Fantasy, Thriller", "releaseDate": "2019", "episodes": "26","seasons": "1", "status": "ongoing"},
+    {"name": "attackOnTitan", "img": "img/attackOnTitan.jpg", "rating": "8.8", "genre":"Action, Fantasy, Drama", "releaseDate": "2013", "episodes": "60","seasons": "4", "status": "ongoing"},
+    {"name": "steins;Gate", "img": "img/steinsGate.jpg", "rating": "8.8", "genre":"Sci-Fi, Thriller, Comedy", "releaseDate": "2011", "episodes": "25","seasons": "1", "status": "finished"},
+    {"name": "codeGeass", "img": "img/codeGeass.jpg", "rating": "8.6", "genre":"Action, Sci-Fi, War", "releaseDate": "2006", "episodes": "50","seasons": "2", "status": "finished"},
+    {"name": "thePromisedNeverland", "img": "img/thePromisedNeverland.jpg", "rating": "8.7", "genre": "Fantasy, Thriller, Drama", "releaseDate": "2019", "episodes": "12","seasons": "1", "status": "ongoing"},
+    {"name": "naruto", "img": "img/naruto.jpg", "rating": "8.3", "genre":"Action, Adventure, Comedy", "releaseDate": "2002", "episodes": "220","seasons": "1", "status": "finished"},
+    {"name": "naruto: Shippuden", "img": "img/narutoShippuden.jpg", "rating": "8.6", "genre":"Action, Adventure, Comedy", "releaseDate": "2007", "episodes": "500","seasons": "1", "status": "finished"},
+    {"name": "bleach", "img": "img/bleach.jpg", "rating": "8.1", "genre":"Action, Fantasy, Comedy", "releaseDate": "2004", "episodes": "366","seasons": "16", "status": "finished"},
+    {"name": "mobPsycho100", "img": "img/mobPsycho100.jpg", "rating": "8.5", "genre":"Action, Comedy, Horror", "releaseDate": "2016", "episodes": "25","seasons": "2", "status": "finished"},
+    {"name": "hunterxHunter", "img": "img/hunterxHunter.jpg", "rating": "8.9", "genre":"Action, Adventure, Comedy", "releaseDate": "2011", "episodes": "148","seasons": "6", "status": "finished"},
+    {"name": "onePunchMan", "img": "img/onePunchMan.jpg", "rating": "8.8", "genre":"Action, Comedy, Fantasy", "releaseDate": "2015", "episodes": "24","seasons": "2", "status": "ongoing"},
+    {"name": "assassinationClassroom", "img": "img/assassinationClassroom.jpg", "rating": "8.0", "genre":"Drama , Comedy, Sci-Fi", "releaseDate": "2015", "episodes": "47","seasons": "2", "status": "finished"}
 ]

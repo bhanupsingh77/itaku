@@ -10,7 +10,7 @@ class Index extends Component {
   constructor(props){
     super(props)
     this.state = {cardsData: cardData,
-      filteredCardsData: [],
+      filteredCardsData: "",
       searchBarDisplay: true
     }
   }
@@ -43,14 +43,26 @@ class Index extends Component {
       <>
         
         <Layout onSearch={this.onSearchBar} searchBarDisplay={this.state.searchBarDisplay}/>
+        <div className="quote">
+          <q>a good anime to watch Recommendation</q>
+        </div>
         <TimeCommitment onClick={this.onClickTimeCommitmentButtons}/>
         <CardBox filteredCardsData={this.state.filteredCardsData}/>
         <style jsx global>{`
           body {
             margin: 0;
             margin-top: 4rem;
+            margin-bottom: 4rem;
             color: #191970;
             background-color: white;
+          }
+
+          .quote {
+            color: black;
+            font-style: italic;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 800;
           }
         `}</style>
       </>

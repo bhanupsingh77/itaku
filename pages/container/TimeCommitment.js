@@ -13,7 +13,7 @@ export default function TimeCommitment({onClick}){
             <style jsx>{`
                 .container {
                     box-shadow: 1px 1px 3px #808080;
-                    margin: 2rem;
+                    margin: 1rem;
                 }
 
                 .button-container {         
@@ -23,14 +23,16 @@ export default function TimeCommitment({onClick}){
                 }
 
                 h1{
-                    text-align:center;
+                    text-align: center;
                     margin: 0;
                 }
 
                 button {
+                    background-color: white;
                     border-radius: 5px;
-                    border: 2px solid grey;
+                    border: 2px solid orange;
                     margin: 0 2px 0 2px;
+                    font-weight: 600;
                 }
 
                 button:hover {

@@ -1,13 +1,14 @@
-const Card = ({name, img, review, rating, episodes, genre, status}) => {
+const Card = ({name, img, seasons, rating, episodes, genre, status, releaseDate}) => {
     return (
         <div className="container">
             <img src={img} alt="loading"/>
             <div className="container-text">
                 <h2>{name}</h2>
-                <p>review: {review}</p>
                 <p>rating: {rating}</p>
                 <p>genre: {genre}</p>
+                <p>release date: {releaseDate}</p>
                 <p>episodes: {episodes}</p>
+                <p>seasons: {seasons}</p>
                 <p>status: {status}</p>
             </div>
             <style jsx>{`

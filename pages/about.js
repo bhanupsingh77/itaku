@@ -17,6 +17,7 @@ class About extends Component {
           body {
             margin: 0;
             margin-top: 4rem;
+            margin-bottom: 4rem;
             color: #191970;
             background-color: white;
           }
