@@ -1,4 +1,4 @@
-const Card = ({name, img, review, rating, episodes, genre}) => {
+const Card = ({name, img, review, rating, episodes, genre, status}) => {
     return (
         <div className="container">
             <img src={img} alt="loading"/>
@@ -8,11 +8,13 @@ const Card = ({name, img, review, rating, episodes, genre}) => {
                 <p>rating: {rating}</p>
                 <p>genre: {genre}</p>
                 <p>episodes: {episodes}</p>
+                <p>status: {status}</p>
             </div>
             <style jsx>{`
                 .container {
                     box-shadow: 1px 1px 3px #808080;  
                     transition: transform .2s;
+                    border-radius: 5px;
                 }
 
                 .container:hover{

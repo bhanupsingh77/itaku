@@ -1,0 +1,18 @@
+
+[
+    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
+    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
+    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
+    {"name": "gurrenLagann", "img": "img/gurrenLagann.jpg", "rating": "8", "genre": "adventure", "review": "pqz", "episodes": "25","status": "ongoing"},
+    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
+    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
+    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
+    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
+    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
+    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
+    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
+    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
+    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"},
+    {"name": "bleach", "img": "img/bleach.jpg", "rating": "9.1", "genre": "action", "review": "xyz", "episodes": "112", "status": "ongoing"},
+    {"name": "naruto", "img": "img/naruto.jpg", "rating": "9", "genre": "comedy", "review": "abc", "episodes": "250", "status": "ongoing"}
+]

@@ -1,12 +1,13 @@
-export default function GenreBar({onClick}){
+export default function TimeCommitment({onClick}){
     return(
         <>
             <div className="container">
-                <h1>Genre</h1>
+                <h1>Time Commitment</h1>
                 <div className="button-container">
-                    <button value="Action" onClick={(event)=>{onClick(event)}}>Action</button>
-                    <button value="Adventure" onClick={(event)=>{onClick(event)}}>Adventure</button>
-                    <button value="Comedy" onClick={(event)=>{onClick(event)}}>Comedy</button>
+                    <button value="25" onClick={(event)=>{onClick(event)}}>Max 25 Episodes</button>
+                    <button value="100" onClick={(event)=>{onClick(event)}}>Max 100 Episodes</button>
+                    <button value="1.797693134862315E+308" onClick={(event)=>{onClick(event)}}>100 Plus Episodes</button> 
+                    <button value="" onClick={(event)=>{onClick(event)}}>X</button>
                 </div>
             </div>    
             <style jsx>{`
@@ -39,3 +40,4 @@ export default function GenreBar({onClick}){
         </>
     )
 }
+

@@ -1,30 +1,16 @@
 import Layout from './container/Layout.js';
 import CardBox from './container/CardBox.js';
-import GenreBar from './container/GenreBar.js';
+import TimeCommitment from './container/TimeCommitment.js';
+import cardData from '../public/data/cardData.json';
+
 import {Component} from 'react';
 
 
 class Index extends Component {
   constructor(props){
     super(props)
-    this.state = {cardsData: [
-      {name: "naruto", img: "img/naruto.jpg", rating: "9", genre: "comedy", review: "abc", episodes: "250"},
-      {name: "bleach", img: "img/bleach.jpg", rating: "9.1", genre: "action", review: "xyz", episodes: "112"},
-      {name: "gurrenLagann", img: "img/gurrenLagann.jpg", rating: "8", genre: "adventure", review: "pqz", episodes: "25"},
-      {name: "naruto", img: "img/naruto.jpg", rating: "9", genre: "comedy", review: "abc", episodes: "250"},
-      {name: "bleach", img: "img/bleach.jpg", rating: "9.1", genre: "action", review: "xyz", episodes: "112"},
-      {name: "naruto", img: "img/naruto.jpg", rating: "9", genre: "comedy", review: "abc", episodes: "250"},
-      {name: "bleach", img: "img/bleach.jpg", rating: "9.1", genre: "action", review: "xyz", episodes: "112"},
-      {name: "naruto", img: "img/naruto.jpg", rating: "9", genre: "comedy", review: "abc", episodes: "250"},
-      {name: "bleach", img: "img/bleach.jpg", rating: "9.1", genre: "action", review: "xyz", episodes: "112"},
-      {name: "naruto", img: "img/naruto.jpg", rating: "9", genre: "comedy", review: "abc", episodes: "250"},
-      {name: "bleach", img: "img/bleach.jpg", rating: "9.1", genre: "action", review: "xyz", episodes: "112"},
-      {name: "naruto", img: "img/naruto.jpg", rating: "9", genre: "comedy", review: "abc", episodes: "250"},
-      {name: "bleach", img: "img/bleach.jpg", rating: "9.1", genre: "action", review: "xyz", episodes: "112"},
-      {name: "naruto", img: "img/naruto.jpg", rating: "9", genre: "comedy", review: "abc", episodes: "250"},
-      {name: "bleach", img: "img/bleach.jpg", rating: "9.1", genre: "action", review: "xyz", episodes: "112"}],
+    this.state = {cardsData: cardData,
       filteredCardsData: [],
-      darktheme: false,
       searchBarDisplay: true
     }
   }
@@ -33,14 +19,14 @@ class Index extends Component {
     this.setState({filteredCardsData: this.state.cardsData});
   }
 
-  onClickGenreButton = (event) => {
+  onClickTimeCommitmentButtons = (event) => {
+    const value = Number(event.target.value);
     const updatedCardsData = this.state.cardsData.filter((arr)=>{
-      if (arr.genre.toLowerCase().includes(event.target.value.toLowerCase())){
-          return arr;
+      if(value==0 ? true : value > 100 ? arr.episodes <= value && arr.episodes > 100 : arr.episodes <= value){
+        return arr;
       }
     });
     this.setState({filteredCardsData: updatedCardsData});
-
   }
 
   onSearchBar = (event) => {
@@ -52,21 +38,19 @@ class Index extends Component {
     this.setState({filteredCardsData: updatedCardsData});
   }
 
-  onClickThemeToggle = () => {
-    this.setState({darktheme: this.state.darktheme ? false : true});
-  }
-
   render(){
     return (
       <>
         
-        <Layout onSearch={this.onSearchBar} onClick={this.onClickThemeToggle} theme={this.state.darktheme} searchBarDisplay={this.state.searchBarDisplay}/>
-        <GenreBar onClick={this.onClickGenreButton}/>
+        <Layout onSearch={this.onSearchBar} searchBarDisplay={this.state.searchBarDisplay}/>
+        <TimeCommitment onClick={this.onClickTimeCommitmentButtons}/>
         <CardBox filteredCardsData={this.state.filteredCardsData}/>
         <style jsx global>{`
           body {
             margin: 0;
             margin-top: 4rem;
+            color: #191970;
+            background-color: white;
           }
         `}</style>
       </>

@@ -7,9 +7,7 @@ export default function NavBar({onSearch, searchBarDisplay}) {
         <div className="container">
             <Link href="/"><a>ITAKU</a></Link>
             <Link href="/about"><a>About</a></Link>
-            <Link href="/feedback"><a>Feedback</a></Link>
             <input className="searchBar" type="text" placeholder="Search..." onChange={(event)=>{onSearch(event)}}/>
-           
             <style jsx>{`
                 .container {
                     position: fixed;
