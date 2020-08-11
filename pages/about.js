@@ -12,7 +12,7 @@ class About extends Component {
     return (
       <>
         <Layout searchBarDisplay={this.state.searchBarDisplay}/>
-        <h1>about1</h1>
+        <h1>about</h1>
         <style jsx global>{`
           body {
             margin: 0;

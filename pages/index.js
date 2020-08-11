@@ -2,7 +2,6 @@ import Layout from './container/Layout.js';
 import CardBox from './container/CardBox.js';
 import TimeCommitment from './container/TimeCommitment.js';
 import cardData from '../public/data/cardData.json';
-
 import {Component} from 'react';
 
 
