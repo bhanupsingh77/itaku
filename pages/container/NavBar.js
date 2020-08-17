@@ -1,13 +1,9 @@
 import Link from 'next/link';
 
-
-export default function NavBar({onSearch, searchBarDisplay}) {
-    const searchBarDisplayCssProp = searchBarDisplay ? "visible" : "hidden";
+export default function NavBar() {
     return(
         <div className="container">
-            <Link href="/"><a>ITAKU</a></Link>
-            <Link href="/about"><a>About</a></Link>
-            <input className="searchBar" type="text" placeholder="Search..." onChange={(event)=>{onSearch(event)}}/>
+            <Link href="#"><a>ITAKU</a></Link>
             <style jsx>{`
                 .container {
                     position: fixed;
@@ -22,7 +18,6 @@ export default function NavBar({onSearch, searchBarDisplay}) {
                     justify-content: space-evenly;
                     font-size: 1.6rem;
                     font-family: sans-serif, Arial, Helvetica;
-
                 }
 
                 a{
@@ -31,10 +26,6 @@ export default function NavBar({onSearch, searchBarDisplay}) {
 
                 a:hover{
                     color: #adafff;
-                }
-
-                .searchBar {
-                    visibility: ${searchBarDisplayCssProp};
                 }
             `}</style>
         </div>

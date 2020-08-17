@@ -1,59 +1,30 @@
-import Layout from './container/Layout.js';
-import CardBox from './container/CardBox.js';
-import TimeCommitment from './container/TimeCommitment.js';
-import cardData from '../public/data/cardData.json';
 import {Component} from 'react';
-
+import NavBar from './container/NavBar.js';
+import CardBox from './container/CardBox.js';
 
 class Index extends Component {
   constructor(props){
     super(props)
-    this.state = {cardsData: cardData,
-      filteredCardsData: "",
-      searchBarDisplay: true
+    this.state = {cardsData: props.posts,
     }
-  }
-
-  componentDidMount(){
-    this.setState({filteredCardsData: this.state.cardsData});
-  }
-
-  onClickTimeCommitmentButtons = (event) => {
-    const value = Number(event.target.value);
-    const updatedCardsData = this.state.cardsData.filter((arr)=>{
-      if(value==0 ? true : value > 100 ? arr.episodes <= value && arr.episodes > 100 : arr.episodes <= value){
-        return arr;
-      }
-    });
-    this.setState({filteredCardsData: updatedCardsData});
-  }
-
-  onSearchBar = (event) => {
-    const updatedCardsData = this.state.cardsData.filter((arr)=>{
-        if (arr.name.toLowerCase().includes(event.target.value.toLowerCase())){
-            return arr;
-        }
-    });
-    this.setState({filteredCardsData: updatedCardsData});
   }
 
   render(){
     return (
       <>
-        
-        <Layout onSearch={this.onSearchBar} searchBarDisplay={this.state.searchBarDisplay}/>
+        <NavBar/> 
         <div className="quote">
           <q>a good anime to watch Recommendation</q>
         </div>
-        <TimeCommitment onClick={this.onClickTimeCommitmentButtons}/>
-        <CardBox filteredCardsData={this.state.filteredCardsData}/>
+        <CardBox cardsData={this.state.cardsData}/>
         <style jsx global>{`
           body {
             margin: 0;
-            margin-top: 4rem;
-            margin-bottom: 4rem;
+            margin-top: 5rem;
+            margin-bottom: 3rem;
             color: #191970;
             background-color: white;
+            font-family: sans-serif, Arial, Helvetica;
           }
 
           .quote {
@@ -63,12 +34,28 @@ class Index extends Component {
             font-size: 1rem;
             font-weight: 800;
           }
+
+          q{
+            box-shadow: 3px 3px 3px orange;  
+          }
         `}</style>
       </>
     )  
   }
 }
 
+export async function getStaticProps() {
+  // Calling an external API endpoint to get posts.
+  const res = await fetch('https://siasky.net/AADrjfUnm-2v-EftfA77nn_zTWoSkDflcXUNiyqYZs2CAw')
+  const posts = await res.json()
+
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      posts,
+    },
+  }
+}
 
 export default Index;
 
